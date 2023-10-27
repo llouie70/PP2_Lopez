@@ -38,8 +38,8 @@ namespace _2Y_OOP_2324_ADeckOfCards
                             value = 0;
                             value = DisplayDeck(hand, dealercard, value, true);
                         }
-                        else
-                            continue;
+                        if(split == "N" || split == "n")
+                            hasSplit = true;
                     }
                     if(hasSplit == true)
                     {

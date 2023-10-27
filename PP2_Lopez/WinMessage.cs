@@ -47,7 +47,12 @@ namespace _2Y_OOP_2324_ADeckOfCards
                     msg = "Dealer wins due to favor by the draw.";
             }
             if (playervalue == dealervalue)
-                msg = "It's a draw.";
+            {
+                if (playervalue > 21 && dealervalue > 21)
+                    msg = "Dealer wins due to favor by the draw.";
+                else
+                    msg = "It's a draw.";
+            }
             return msg;
         }
     }
